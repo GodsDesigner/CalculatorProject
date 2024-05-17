@@ -87,3 +87,18 @@ body {
 .equal-sign:hover {
     background-color: #2ecc71;
 }
+
+@media (min-width: 992px) {
+    .calculator {
+        width: 320px; /* Default width */
+    }
+
+    .calculator-screen {
+        font-size: 2.5rem;
+    }
+
+    .calculator-keys button {
+        height: 70px;
+        font-size: 1.8rem;
+    }
+}
