@@ -3,8 +3,26 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #1e1e1e;
+    margin: 0;
     font-family: 'Roboto', sans-serif;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAhFBMVEX4+Pj///8AAAD09PTa2trt7e3x8fH8/Pzw8PDX19fr6+vT09Pm5ube3t7W1taamppISEh4eHi2traioqKEhITGxsa/v7/Nzc09PT1nZ2eQkJC0tLSnp6crKyu8vLxKSkpwcHAPDw8YGBhXV1eKiooxMTFfX18jIyNoaGhTU1M1NTUbGxs7/pz1AAAFr0lEQVR4nO2Z63bbKhCFJYNAF5CdKLYa23F8SeImff/3OzOAZOzY7Z+GZp21v9UmCM0gthgGIrIMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABIhysJRipsWg0lx0+QbI2pbVS1TSaOumxjJFs2FiVCqVGWpvrlq6n2hA8raaxLJpBxMSjmYiMLKtiEqW387jToqF1WWn7DmSmfrSp8stDWuUpnKCCc6M/Lqi/kXCEFhRf+E4LKgsiqkiQTmoqm5VpDJiJJ1bFI2BftZqSPVkuu4cWqaXdxTUssWyoSwaitrqFxxuZ+LuPt5M3cW0p5o5/Eo57rv2a8/q3R13LJzDI+R1qSMX2Vaii+OT01l2xgXbDpzIxFHoausTcSZFmfBnnlw9A34yKeIZWq69I20tkykTxRSqvwWOu+Or083b3sejk+HP5hcadnYRKN4Md0+KZxOJpM/dPZuMpld1qnl8sX+XmJVJxEorBeodX4WkmM5VhhlkLFMjucK/Q1DbvNzS39Pc4Xmx5lr2fnvE/J9rO2cizHUlwV9fQzrQWFM9ChWKFMoHIYwz7NF142psd503b29UGhX3Vr6Aeqbln+XPSXOaAzZbeXdCnLrvZ+g2oXPy7pv+iI3nbPJ2hSLRtlkp6Eipu7Rj/5iVkcKzbOre+XOkSSXfeZUUY9jmL2d3N59kYz1nS/e8dgpKizW9D+dwlr6iHmYBJZ0fRgufuhRYb0fKo2z/vFZ4dtgQer965hQ67Oh9l17hS+TQWGTYL2gfaVT2NBTnzeLmRPAF9vFYku/mlEhd3857+jn4w2FZ279igOCYnPpWt7MfHyooHaTbAyFLVyMUlj+4mfuuB/UqVeupJ7cDwo5NXZURxE2Ka4rnIbQ9W6FzzSCBXItDeou8wpXIb2KKkGmEdIp1Hsfnvn0cJjmJe2ocq3WsUIekpJzy+HtYK4rVKYgNxHcQi7tfSB408YpfBgya5IlPygUPnDGlcAu3z5cNI0KaVx3p/vX52Fup4+vg1tQSHp3anjEvVO4GZ9ivl5grLD3q5T2qZI47iKFDyEEtVurrysMbmcKaeIe3YvJKEzWPpcGgapKsTGNFC7yYRA5In9urPh1Pob7POx8bihkt8eNzT+NoRgesYoVFm2STVtQmE3CSthttx0nhcdQOSrk2UWzLFfbu+1pHi5ihe/e7VzhfJiH/TgPvULbpPnzyedSzWvBLixXXX702WB1mUv5HfByofIXr8yt66NCmrl3wW017kt56N5DLt2LSGGTYhIyxm/D+FXPFvNn12P+ue6nZ5nGLdzLngVuvYqP9dot6/EYTrrRjcdwWWj3Mt7mc765zCOFVZFIodvT+EH0TH1EBrpRoR3raj8yzFOs8NyNl1betemnoXKmI4VZkjTDjPvSl7FvYQv3Id92e5p73e54dBPnh++n26k3rvyzn+xZ4cP+14Heknez77v9vvTxzLs2MexLXf6kJp1C1aT6VDP+eZgXq3V3X3q51bpbaPdNQof1gdNsv+7WzZDqV13XB4vBJG+9G3/toOum69bu9RlqeVX7Pw6z8JEjyX7GEybiZ/SNPxn1jRsX9Z+sziuKVJ8weBB//63hi0iynwkU1e++03wRZbJE4yXa7M99+pvouk04hBl/L21kUfARRVaHcyStixOmklXrDdjCtG3tLoS3tq0xjeVSrXVZn/xCI7XS3thUhJTStjb1QZUo+Tt3VbWSO0BQR0KJO2T5U66VdLchI+u/ilehu9LdNdaymySjkbERPr8Kjp7bZ3VfKVKosijL4TyidOcMgWDgDgpVONlQqihVdDvzZxJldKoxNuJaVuLbnUIBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/l/8B8P1T78/kkkJAAAAAElFTkSuQmCC') no-repeat center center fixed; /* Optional background image */
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    z-index: -1;
 }
 
 .calculator {
@@ -91,6 +109,20 @@ body {
 @media (min-width: 992px) {
     .calculator {
         width: 320px; /* Default width */
+    }
+
+    .calculator-screen {
+        font-size: 2.5rem;
+    }
+
+    .calculator-keys button {
+        height: 70px;
+        font-size: 1.8rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .calculator {
+        width: 400px; /* Slightly larger width for tablets */
     }
 
     .calculator-screen {
